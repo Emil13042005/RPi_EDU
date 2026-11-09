@@ -1,0 +1,55 @@
+.pageContainer {
+  composes: pageContainer from './common.module.css';
+}
+
+/* Две колонки: слева и справа партнёры */
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Карточка партнёра */
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.partner:hover {
+  transform: translateY(-4px);
+}
+
+/* Логотип */
+.partnerLogo {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Текст под логотипом */
+.partnerText {
+  color: #2c3e50;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 260px;
+}
+
+/* Адаптив: на узких экранах — в столбик */
+@media (max-width: 700px) {
+  .partners {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,48 @@
+.pageContainer {
+    composes: pageContainer from './common.module.css';
+  }
+  
+  .headerH1 {
+    composes: headerH1 from './common.module.css';
+  }
+  
+  .textP {
+    composes: textP from './common.module.css';
+  }
+  
+  .principles {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .principlesTitle {
+    margin-bottom: 10px;
+  }
+  
+  .principlesList {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .pageContainer {
+    composes: pageContainer from './common.module.css';
+  }
+  
+
+  .fullText {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+
+  .fullText p {
+    margin: 0 0 1.2em;
+  }
+  
+  .fullText p:last-child {
+    margin-bottom: 0;
+  }

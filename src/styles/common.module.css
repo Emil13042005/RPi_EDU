@@ -1,0 +1,17 @@
+.pageContainer {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .headerH1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .textP {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
